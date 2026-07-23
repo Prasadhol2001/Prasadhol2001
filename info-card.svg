@@ -10,8 +10,72 @@
     .separator { stroke: #30363d; stroke-width: 1px; }
     .key { fill: #79c0ff; font-weight: 600; }
     .val { fill: #c9d1d9; }
-    .val-highlight { fill: #7ee787; font-weight: 500; }
   </style>
+  <clipPath id="info-clip-0">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.05s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-1">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.13s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-2">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.21s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-3">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.29s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-4">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.37s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-5">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.45s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-6">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.53s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-7">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.61s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-8">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.69s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-9">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.77s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-10">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.85s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-11">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="0.93s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <clipPath id="info-clip-12">
+    <rect x="0" y="0" width="0" height="490">
+      <animate attributeName="width" from="0" to="490" begin="1.01s" dur="0.25s" fill="freeze" />
+    </rect>
+  </clipPath>
 </defs>
 <rect class="card-bg" width="490" height="490" />
 <circle class="header-dot" cx="20" cy="18" r="5" fill="#ff5f56" />
@@ -19,75 +83,63 @@
 <circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />
 <text class="title-text" x="245" y="22" text-anchor="middle">neofetch --user Prasadhol2001</text>
 <line x1="0" y1="32" x2="490" y2="32" stroke="#21262d" stroke-width="1" />
-<g opacity="0">
+<g clip-path="url(#info-clip-0)">
   <text class="term-text" x="24" y="62"><tspan class="user-title">Prasadhol2001</tspan><tspan class="val">@</tspan><tspan class="host-title">github</tspan></text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.08s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-1)">
   <line x1="24" y1="80" x2="466" y2="80" class="separator" />
-  <animate attributeName="opacity" from="0" to="1" begin="0.14s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-2)">
   <text class="term-text" x="24" y="110">
     <tspan class="key">OS:</tspan>&#160;&#160;<tspan class="val">GitHub Mobile Engine x86_64</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-3)">
   <text class="term-text" x="24" y="134">
     <tspan class="key">Host:</tspan>&#160;&#160;<tspan class="val">Flutter Engine v3.24 / Android / iOS</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.26s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-4)">
   <text class="term-text" x="24" y="158">
-    <tspan class="key">Role:</tspan>&#160;&#160;<tspan class="val">Flutter &amp; Mobile App Developer</tspan>
+    <tspan class="key">Role:</tspan>&#160;&#160;<tspan class="val">Flutter &amp;amp; Mobile App Developer</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.32s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-5)">
   <text class="term-text" x="24" y="182">
-    <tspan class="key">Specialty:</tspan>&#160;&#160;<tspan class="val">Full-Cycle App Architecture &amp; APIs</tspan>
+    <tspan class="key">Specialty:</tspan>&#160;&#160;<tspan class="val">Full-Cycle App Architecture &amp;amp; APIs</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.38s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-6)">
   <text class="term-text" x="24" y="206">
     <tspan class="key">State Mgmt:</tspan>&#160;&#160;<tspan class="val">GetX / Provider / Bloc</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.44s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-7)">
   <text class="term-text" x="24" y="230">
     <tspan class="key">Backend:</tspan>&#160;&#160;<tspan class="val">Firebase (Auth, Firestore, Cloud)</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.50s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-8)">
   <text class="term-text" x="24" y="254">
     <tspan class="key">Stack:</tspan>&#160;&#160;<tspan class="val">Flutter, Dart, Kotlin, Java, REST APIs</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.56s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-9)">
   <text class="term-text" x="24" y="278">
     <tspan class="key">Tools:</tspan>&#160;&#160;<tspan class="val">Git, GitHub, CI/CD, VS Code, Android Studio</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.62s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-10)">
   <text class="term-text" x="24" y="302">
     <tspan class="key">Status:</tspan>&#160;&#160;<tspan class="val">Building scalable, high-quality apps 🚀</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.68s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-11)">
   <text class="term-text" x="24" y="326">
     <tspan class="key">Contact:</tspan>&#160;&#160;<tspan class="val">prasadhol922001@gmail.com</tspan>
   </text>
-  <animate attributeName="opacity" from="0" to="1" begin="0.74s" dur="0.3s" fill="freeze" />
 </g>
-<g opacity="0">
+<g clip-path="url(#info-clip-12)">
   <rect x="24" y="342" width="20" height="14" rx="3" fill="#484f58" />
   <rect x="48" y="342" width="20" height="14" rx="3" fill="#ff7b72" />
   <rect x="72" y="342" width="20" height="14" rx="3" fill="#7ee787" />
@@ -96,6 +148,5 @@
   <rect x="144" y="342" width="20" height="14" rx="3" fill="#d2a8ff" />
   <rect x="168" y="342" width="20" height="14" rx="3" fill="#a5d6ff" />
   <rect x="192" y="342" width="20" height="14" rx="3" fill="#f0f6fc" />
-  <animate attributeName="opacity" from="0" to="1" begin="0.80s" dur="0.3s" fill="freeze" />
 </g>
 </svg>

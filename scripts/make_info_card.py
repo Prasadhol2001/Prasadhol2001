@@ -11,7 +11,10 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     lines = []
     lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     
-    # Styles
+    # Clip paths for row-by-row animation (matching avi-ascii.svg technique)
+    info_rows_count = 13
+    row_duration = 0.08
+    
     lines.append('<defs>')
     lines.append('  <style>')
     lines.append('    .card-bg { fill: #0d1117; rx: 8px; ry: 8px; stroke: #30363d; stroke-width: 1px; }')
@@ -23,8 +26,17 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     lines.append('    .separator { stroke: #30363d; stroke-width: 1px; }')
     lines.append('    .key { fill: #79c0ff; font-weight: 600; }')
     lines.append('    .val { fill: #c9d1d9; }')
-    lines.append('    .val-highlight { fill: #7ee787; font-weight: 500; }')
     lines.append('  </style>')
+    
+    if not is_static:
+        for r in range(info_rows_count):
+            begin_t = 0.05 + (r * row_duration)
+            lines.append(f'  <clipPath id="info-clip-{r}">')
+            lines.append(f'    <rect x="0" y="0" width="0" height="{height}">')
+            lines.append(f'      <animate attributeName="width" from="0" to="{width}" begin="{begin_t:.2f}s" dur="0.25s" fill="freeze" />')
+            lines.append('    </rect>')
+            lines.append('  </clipPath>')
+            
     lines.append('</defs>')
     
     # Card Backdrop
@@ -43,8 +55,8 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
         ("SEP", "------------------------------------------"),
         ("KEYVAL", "OS", "GitHub Mobile Engine x86_64"),
         ("KEYVAL", "Host", "Flutter Engine v3.24 / Android / iOS"),
-        ("KEYVAL", "Role", "Flutter & Mobile App Developer"),
-        ("KEYVAL", "Specialty", "Full-Cycle App Architecture & APIs"),
+        ("KEYVAL", "Role", "Flutter &amp; Mobile App Developer"),
+        ("KEYVAL", "Specialty", "Full-Cycle App Architecture &amp; APIs"),
         ("KEYVAL", "State Mgmt", "GetX / Provider / Bloc"),
         ("KEYVAL", "Backend", "Firebase (Auth, Firestore, Cloud)"),
         ("KEYVAL", "Stack", "Flutter, Dart, Kotlin, Java, REST APIs"),
@@ -60,48 +72,34 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     
     for i, row in enumerate(info_rows):
         y_pos = start_y + (i * row_height)
-        delay = 0.08 + (i * 0.06)
+        clip_attr = f' clip-path="url(#info-clip-{i})"' if not is_static else ''
         
         row_type = row[0]
         if row_type == "HEADER":
-            lines.append(f'<g opacity="0">')
+            lines.append(f'<g{clip_attr}>')
             lines.append(f'  <text class="term-text" x="{start_x}" y="{y_pos}">{row[1]}</text>')
-            if not is_static:
-                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
-            else:
-                lines[-1] = f'<g opacity="1">'
             lines.append('</g>')
             
         elif row_type == "SEP":
-            lines.append(f'<g opacity="0">')
+            lines.append(f'<g{clip_attr}>')
             lines.append(f'  <line x1="{start_x}" y1="{y_pos - 6}" x2="{width - start_x}" y2="{y_pos - 6}" class="separator" />')
-            if not is_static:
-                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
-            else:
-                lines[-1] = f'<g opacity="1">'
             lines.append('</g>')
             
         elif row_type == "KEYVAL":
             key, val = html.escape(row[1]), html.escape(row[2])
-            lines.append(f'<g opacity="0">')
+            lines.append(f'<g{clip_attr}>')
             lines.append(f'  <text class="term-text" x="{start_x}" y="{y_pos}">')
             lines.append(f'    <tspan class="key">{key}:</tspan>&#160;&#160;<tspan class="val">{val}</tspan>')
             lines.append('  </text>')
-            if not is_static:
-                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
-            else:
-                lines[-1] = f'<g opacity="0" style="opacity:1;">'
             lines.append('</g>')
             
         elif row_type == "COLORS":
             colors = ["#484f58", "#ff7b72", "#7ee787", "#f2cc60", "#79c0ff", "#d2a8ff", "#a5d6ff", "#f0f6fc"]
-            lines.append(f'<g opacity="0">')
+            lines.append(f'<g{clip_attr}>')
             block_y = y_pos - 8
             for c_idx, color in enumerate(colors):
                 bx = start_x + (c_idx * 24)
                 lines.append(f'  <rect x="{bx}" y="{block_y}" width="20" height="14" rx="3" fill="{color}" />')
-            if not is_static:
-                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
             lines.append('</g>')
             
     lines.append('</svg>')
@@ -109,7 +107,7 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
         
-    print(f"Generated Info Card SVG '{output_svg}' with SMIL animations for user '{username}'.")
+    print(f"Generated Info Card SVG '{output_svg}' matching avi-ascii clip animation for user '{username}'.")
 
 if __name__ == "__main__":
     out_file = sys.argv[1] if len(sys.argv) > 1 else "info-card.svg"
