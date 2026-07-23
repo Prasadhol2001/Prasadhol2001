@@ -26,14 +26,65 @@
 
 ---
 
-# 📱 Featured Production Apps on Google Play
+# 📱 Featured Production Mobile Applications
 
-| App | Description | Key Tech Stack | Play Store Link |
-| :--- | :--- | :--- | :---: |
-| **📱 Edrilla** | EdTech & E-Learning Platform | `Flutter` `Dart` `Firebase` `REST APIs` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.edrilla.app) |
-| **🚚 Lion Express** | Logistics & Real-Time Parcel Tracking | `Flutter` `Dart` `GetX` `REST APIs` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.lionexpress.nexp) |
-| **🛍️ Zyclo Fashion** | E-Commerce Fashion & Shopping Experience | `Flutter` `Dart` `Provider` `Firebase` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.zyclofashion.app) |
-| **⚡ Hemz** | On-Demand Services & Multi-Utility App | `Flutter` `Dart` `Bloc` `Cloud APIs` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.hemz.nexp) |
+<details open>
+<summary><b>🎓 Edrilla – Learning Management System (LMS)</b></summary>
+<br>
+
+**Tech Stack**: `Flutter` `BLoC` `WebSocket` `Firebase` `VideoCypher DRM` `Clean Architecture` `iOS & Android`  
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.edrilla.app)
+
+- 🏗️ **Clean Architecture + BLoC**: Designed scalable LMS architecture using BLoC pattern, improving code scalability by **50%**.
+- 🔒 **Secure DRM Video Streaming**: Built video streaming modules with VideoCypher DRM and multi-lesson modules, increasing session stability by **30%**.
+- ⚡ **Real-Time WebSockets**: Developed real-time chat and video progress sync using WebSockets with 0–1 sec latency, boosting engagement by **45%**.
+- 🛡️ **Advanced Security Features**: Implemented screenshot & screen-recording protection (**100% prevention**) and root/jailbreak detection (**+40% security**).
+- 💬 **Community & Monetization**: Built Forum system, Gigs module, and Events feature, increasing platform engagement and retention by **25–35%**.
+</details>
+
+<br>
+
+<details open>
+<summary><b>🛍️ Zyclo – Quick Commerce Fashion Platform (Customer & Delivery Partner Apps)</b></summary>
+<br>
+
+**Tech Stack**: `Flutter` `Provider` `Firebase` `Google Maps API` `Razorpay` `COD`  
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.zyclofashion.app)
+
+- 🚀 **Full-Cycle App Development**: Built customer and delivery partner apps from scratch, achieving **25% performance gain** via optimized state management.
+- 🗺️ **Real-Time GPS Tracking**: Integrated Google Maps API for live order tracking and route optimization, reducing delivery delays by **30%**.
+- 💳 **Dual Payment Gateways**: Integrated COD and Razorpay, reducing checkout failures by **18%** and increasing completions by **22%**.
+- 🚚 **Delivery Partner Suite**: Order pickup, live status updates, earnings dashboard, and audio alerts, improving driver efficiency by **25%** and response time by **40%**.
+</details>
+
+<br>
+
+<details open>
+<summary><b>🎫 Hemz – Event Booking & Ticketing Platform</b></summary>
+<br>
+
+**Tech Stack**: `Flutter` `GetX` `Razorpay` `SQLite` `QR Verification` `Android`  
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.hemz.nexp)
+
+- ⚡ **High-Performance Architecture**: Architected entire platform using Flutter + GetX, improving navigation speed and UI responsiveness by **35%**.
+- 🎟️ **QR Ticket Verification**: Developed QR-based ticket generation and instant scanner validation, reducing event entry time by **40%**.
+- 💾 **Payment Optimization & Offline Storage**: Integrated Razorpay with a **20% reduction in payment failures** and implemented SQLite for offline ticket access.
+</details>
+
+<br>
+
+<details open>
+<summary><b>📰 LionExpress – 24/7 Live News & Shorts Media App</b></summary>
+<br>
+
+**Tech Stack**: `Flutter` `GetX` `SQLite` `Firebase Cloud Messaging` `Shorts / Reels` `REST APIs`  
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.lionexpress.nexp)
+
+- 📺 **Live Streaming & News Reels**: Watch 24/7 live news streams and swipeable short news reels with fast performance across all devices.
+- 🔔 **Instant Breaking Alerts**: Firebase Cloud Messaging (FCM) integration for real-time breaking news notifications.
+- 📂 **Category & Local News Coverage**: Topic filtering, city-level news coverage, bookmarking, and instant social sharing.
+- 💾 **Offline Caching & Dark Mode**: Local SQLite database for offline article reading and smooth dark mode UI.
+</details>
 
 ---
 
