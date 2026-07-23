@@ -33,7 +33,7 @@
 <br>
 
 **Tech Stack**: `Flutter` `BLoC` `WebSocket` `Firebase` `VideoCypher DRM` `Clean Architecture` `iOS & Android`  
-[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.edrilla.app)
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.edrilla.app) [![App Store](https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/us/app/edrilla-business-booster/id6751890495)
 
 - 🏗️ **Clean Architecture + BLoC**: Designed scalable LMS architecture using BLoC pattern, improving code scalability by **50%**.
 - 🔒 **Secure DRM Video Streaming**: Built video streaming modules with VideoCypher DRM and multi-lesson modules, increasing session stability by **30%**.
@@ -48,8 +48,8 @@
 <summary><b>🛍️ Zyclo – Quick Commerce Fashion Platform (Customer & Delivery Partner Apps)</b></summary>
 <br>
 
-**Tech Stack**: `Flutter` `Provider` `Firebase` `Google Maps API` `Razorpay` `COD`  
-[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.zyclofashion.app)
+**Tech Stack**: `Flutter` `Provider` `Firebase` `Google Maps API` `Razorpay` `COD` `iOS & Android`  
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.zyclofashion.app) [![App Store](https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/us/app/zyclo/id6751007863)
 
 - 🚀 **Full-Cycle App Development**: Built customer and delivery partner apps from scratch, achieving **25% performance gain** via optimized state management.
 - 🗺️ **Real-Time GPS Tracking**: Integrated Google Maps API for live order tracking and route optimization, reducing delivery delays by **30%**.
@@ -77,8 +77,8 @@
 <summary><b>📰 LionExpress – 24/7 Live News & Shorts Media App</b></summary>
 <br>
 
-**Tech Stack**: `Flutter` `GetX` `SQLite` `Firebase Cloud Messaging` `Shorts / Reels` `REST APIs`  
-[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.lionexpress.nexp)
+**Tech Stack**: `Flutter` `GetX` `SQLite` `Firebase Cloud Messaging` `Shorts / Reels` `REST APIs` `iOS & Android`  
+[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.lionexpress.nexp) [![App Store](https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/us/app/lion-express/id6756486146)
 
 - 📺 **Live Streaming & News Reels**: Watch 24/7 live news streams and swipeable short news reels with fast performance across all devices.
 - 🔔 **Instant Breaking Alerts**: Firebase Cloud Messaging (FCM) integration for real-time breaking news notifications.
