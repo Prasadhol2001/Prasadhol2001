@@ -30,67 +30,62 @@
 </g>
 <g class="fade-line" style="animation-delay: 0.26s;">
   <text class="term-text" x="24" y="110">
-    <tspan class="key">OS:</tspan>&#160;&#160;<tspan class="val">GitHub Profile Linux x86_64</tspan>
+    <tspan class="key">OS:</tspan>&#160;&#160;<tspan class="val">GitHub Mobile Engine x86_64</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.34s;">
   <text class="term-text" x="24" y="134">
-    <tspan class="key">Host:</tspan>&#160;&#160;<tspan class="val">Cloud Engine v2.4</tspan>
+    <tspan class="key">Host:</tspan>&#160;&#160;<tspan class="val">Flutter Engine v3.24 / Android / iOS</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.42s;">
   <text class="term-text" x="24" y="158">
-    <tspan class="key">Kernel:</tspan>&#160;&#160;<tspan class="val">5.15.0-profile-generic</tspan>
+    <tspan class="key">Role:</tspan>&#160;&#160;<tspan class="val">Flutter & Mobile App Developer</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.50s;">
   <text class="term-text" x="24" y="182">
-    <tspan class="key">Uptime:</tspan>&#160;&#160;<tspan class="val">365 days, 24 mins</tspan>
+    <tspan class="key">Specialty:</tspan>&#160;&#160;<tspan class="val">Full-Cycle App Architecture & APIs</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.58s;">
   <text class="term-text" x="24" y="206">
-    <tspan class="key">Shell:</tspan>&#160;&#160;<tspan class="val">zsh 5.9 (x86_64-apple-darwin22.0)</tspan>
+    <tspan class="key">State Mgmt:</tspan>&#160;&#160;<tspan class="val">GetX / Provider / Bloc</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.66s;">
   <text class="term-text" x="24" y="230">
-    <tspan class="key">Role:</tspan>&#160;&#160;<tspan class="val">Full-Stack Software Engineer</tspan>
+    <tspan class="key">Backend:</tspan>&#160;&#160;<tspan class="val">Firebase (Auth, Firestore, Cloud)</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.74s;">
   <text class="term-text" x="24" y="254">
-    <tspan class="key">Focus:</tspan>&#160;&#160;<tspan class="val">Web Architecture, APIs, DevTools</tspan>
+    <tspan class="key">Stack:</tspan>&#160;&#160;<tspan class="val">Flutter, Dart, Kotlin, Java, REST APIs</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.82s;">
   <text class="term-text" x="24" y="278">
-    <tspan class="key">Stack:</tspan>&#160;&#160;<tspan class="val">Python, TypeScript, React, Node.js, C++</tspan>
+    <tspan class="key">Tools:</tspan>&#160;&#160;<tspan class="val">Git, GitHub, CI/CD, VS Code, Android Studio</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.90s;">
   <text class="term-text" x="24" y="302">
-    <tspan class="key">Editor:</tspan>&#160;&#160;<tspan class="val">VS Code / Antigravity IDE</tspan>
+    <tspan class="key">Status:</tspan>&#160;&#160;<tspan class="val">Building scalable, high-quality apps 🚀</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 0.98s;">
   <text class="term-text" x="24" y="326">
-    <tspan class="key">Terminal:</tspan>&#160;&#160;<tspan class="val">Kitty / iTerm2 / Windows Terminal</tspan>
+    <tspan class="key">Contact:</tspan>&#160;&#160;<tspan class="val">prasadhol922001@gmail.com</tspan>
   </text>
 </g>
 <g class="fade-line" style="animation-delay: 1.06s;">
-  <text class="term-text" x="24" y="350">
-    <tspan class="key">Status:</tspan>&#160;&#160;<tspan class="val">Building awesome open-source software 🚀</tspan>
-  </text>
-</g>
-<g class="fade-line" style="animation-delay: 1.14s;">
-  <rect x="24" y="366" width="20" height="14" rx="3" fill="#484f58" />
-  <rect x="48" y="366" width="20" height="14" rx="3" fill="#ff7b72" />
-  <rect x="72" y="366" width="20" height="14" rx="3" fill="#7ee787" />
-  <rect x="96" y="366" width="20" height="14" rx="3" fill="#f2cc60" />
-  <rect x="120" y="366" width="20" height="14" rx="3" fill="#79c0ff" />
-  <rect x="144" y="366" width="20" height="14" rx="3" fill="#d2a8ff" />
-  <rect x="168" y="366" width="20" height="14" rx="3" fill="#a5d6ff" />
-  <rect x="192" y="366" width="20" height="14" rx="3" fill="#f0f6fc" />
+  <rect x="24" y="342" width="20" height="14" rx="3" fill="#484f58" />
+  <rect x="48" y="342" width="20" height="14" rx="3" fill="#ff7b72" />
+  <rect x="72" y="342" width="20" height="14" rx="3" fill="#7ee787" />
+  <rect x="96" y="342" width="20" height="14" rx="3" fill="#f2cc60" />
+  <rect x="120" y="342" width="20" height="14" rx="3" fill="#79c0ff" />
+  <rect x="144" y="342" width="20" height="14" rx="3" fill="#d2a8ff" />
+  <rect x="168" y="342" width="20" height="14" rx="3" fill="#a5d6ff" />
+  <rect x="192" y="342" width="20" height="14" rx="3" fill="#f0f6fc" />
 </g>
 </svg>

@@ -47,17 +47,16 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     info_rows = [
         ("HEADER", f'<tspan class="user-title">{username}</tspan><tspan class="val">@</tspan><tspan class="host-title">github</tspan>'),
         ("SEP", "------------------------------------------"),
-        ("KEYVAL", "OS", "GitHub Profile Linux x86_64"),
-        ("KEYVAL", "Host", "Cloud Engine v2.4"),
-        ("KEYVAL", "Kernel", "5.15.0-profile-generic"),
-        ("KEYVAL", "Uptime", "365 days, 24 mins"),
-        ("KEYVAL", "Shell", "zsh 5.9 (x86_64-apple-darwin22.0)"),
-        ("KEYVAL", "Role", "Full-Stack Software Engineer"),
-        ("KEYVAL", "Focus", "Web Architecture, APIs, DevTools"),
-        ("KEYVAL", "Stack", "Python, TypeScript, React, Node.js, C++"),
-        ("KEYVAL", "Editor", "VS Code / Antigravity IDE"),
-        ("KEYVAL", "Terminal", "Kitty / iTerm2 / Windows Terminal"),
-        ("KEYVAL", "Status", "Building awesome open-source software 🚀"),
+        ("KEYVAL", "OS", "GitHub Mobile Engine x86_64"),
+        ("KEYVAL", "Host", "Flutter Engine v3.24 / Android / iOS"),
+        ("KEYVAL", "Role", "Flutter & Mobile App Developer"),
+        ("KEYVAL", "Specialty", "Full-Cycle App Architecture & APIs"),
+        ("KEYVAL", "State Mgmt", "GetX / Provider / Bloc"),
+        ("KEYVAL", "Backend", "Firebase (Auth, Firestore, Cloud)"),
+        ("KEYVAL", "Stack", "Flutter, Dart, Kotlin, Java, REST APIs"),
+        ("KEYVAL", "Tools", "Git, GitHub, CI/CD, VS Code, Android Studio"),
+        ("KEYVAL", "Status", "Building scalable, high-quality apps 🚀"),
+        ("KEYVAL", "Contact", "prasadhol922001@gmail.com"),
         ("COLORS", None)
     ]
     
