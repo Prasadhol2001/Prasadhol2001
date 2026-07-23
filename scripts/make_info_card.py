@@ -11,25 +11,19 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     lines = []
     lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     
-    # Styles & Animations
+    # Styles
     lines.append('<defs>')
     lines.append('  <style>')
     lines.append('    .card-bg { fill: #0d1117; rx: 8px; ry: 8px; stroke: #30363d; stroke-width: 1px; }')
     lines.append('    .header-dot { rx: 50%; ry: 50%; }')
     lines.append('    .title-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }')
-    lines.append('    .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; }')
+    lines.append('    .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #c9d1d9; }')
     lines.append('    .user-title { fill: #58a6ff; font-weight: bold; font-size: 15px; }')
     lines.append('    .host-title { fill: #bc8cff; font-weight: bold; font-size: 15px; }')
     lines.append('    .separator { stroke: #30363d; stroke-width: 1px; }')
     lines.append('    .key { fill: #79c0ff; font-weight: 600; }')
     lines.append('    .val { fill: #c9d1d9; }')
     lines.append('    .val-highlight { fill: #7ee787; font-weight: 500; }')
-    lines.append('    .prompt { fill: #d2a8ff; font-weight: bold; }')
-    
-    if not is_static:
-        lines.append('    .fade-line { opacity: 0; transform: translateY(6px); animation: fadeIn 0.4s ease-out forwards; }')
-        lines.append('    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }')
-        
     lines.append('  </style>')
     lines.append('</defs>')
     
@@ -66,33 +60,48 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     
     for i, row in enumerate(info_rows):
         y_pos = start_y + (i * row_height)
-        delay = 0.1 + (i * 0.08)
-        anim_attr = f' class="fade-line" style="animation-delay: {delay:.2f}s;"' if not is_static else ''
+        delay = 0.08 + (i * 0.06)
         
         row_type = row[0]
         if row_type == "HEADER":
-            lines.append(f'<g{anim_attr}>')
+            lines.append(f'<g opacity="0">')
             lines.append(f'  <text class="term-text" x="{start_x}" y="{y_pos}">{row[1]}</text>')
+            if not is_static:
+                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
+            else:
+                lines[-1] = f'<g opacity="1">'
             lines.append('</g>')
+            
         elif row_type == "SEP":
-            lines.append(f'<g{anim_attr}>')
+            lines.append(f'<g opacity="0">')
             lines.append(f'  <line x1="{start_x}" y1="{y_pos - 6}" x2="{width - start_x}" y2="{y_pos - 6}" class="separator" />')
+            if not is_static:
+                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
+            else:
+                lines[-1] = f'<g opacity="1">'
             lines.append('</g>')
+            
         elif row_type == "KEYVAL":
             key, val = html.escape(row[1]), html.escape(row[2])
-            lines.append(f'<g{anim_attr}>')
+            lines.append(f'<g opacity="0">')
             lines.append(f'  <text class="term-text" x="{start_x}" y="{y_pos}">')
             lines.append(f'    <tspan class="key">{key}:</tspan>&#160;&#160;<tspan class="val">{val}</tspan>')
             lines.append('  </text>')
+            if not is_static:
+                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
+            else:
+                lines[-1] = f'<g opacity="0" style="opacity:1;">'
             lines.append('</g>')
+            
         elif row_type == "COLORS":
-            # Color block palette
             colors = ["#484f58", "#ff7b72", "#7ee787", "#f2cc60", "#79c0ff", "#d2a8ff", "#a5d6ff", "#f0f6fc"]
-            lines.append(f'<g{anim_attr}>')
+            lines.append(f'<g opacity="0">')
             block_y = y_pos - 8
             for c_idx, color in enumerate(colors):
                 bx = start_x + (c_idx * 24)
                 lines.append(f'  <rect x="{bx}" y="{block_y}" width="20" height="14" rx="3" fill="{color}" />')
+            if not is_static:
+                lines.append(f'  <animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.3s" fill="freeze" />')
             lines.append('</g>')
             
     lines.append('</svg>')
@@ -100,7 +109,7 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
         
-    print(f"Generated Info Card SVG '{output_svg}' for user '{username}'.")
+    print(f"Generated Info Card SVG '{output_svg}' with SMIL animations for user '{username}'.")
 
 if __name__ == "__main__":
     out_file = sys.argv[1] if len(sys.argv) > 1 else "info-card.svg"

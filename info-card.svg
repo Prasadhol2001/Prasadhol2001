@@ -4,16 +4,13 @@
     .card-bg { fill: #0d1117; rx: 8px; ry: 8px; stroke: #30363d; stroke-width: 1px; }
     .header-dot { rx: 50%; ry: 50%; }
     .title-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }
-    .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; }
+    .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #c9d1d9; }
     .user-title { fill: #58a6ff; font-weight: bold; font-size: 15px; }
     .host-title { fill: #bc8cff; font-weight: bold; font-size: 15px; }
     .separator { stroke: #30363d; stroke-width: 1px; }
     .key { fill: #79c0ff; font-weight: 600; }
     .val { fill: #c9d1d9; }
     .val-highlight { fill: #7ee787; font-weight: 500; }
-    .prompt { fill: #d2a8ff; font-weight: bold; }
-    .fade-line { opacity: 0; transform: translateY(6px); animation: fadeIn 0.4s ease-out forwards; }
-    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
   </style>
 </defs>
 <rect class="card-bg" width="490" height="490" />
@@ -22,63 +19,75 @@
 <circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />
 <text class="title-text" x="245" y="22" text-anchor="middle">neofetch --user Prasadhol2001</text>
 <line x1="0" y1="32" x2="490" y2="32" stroke="#21262d" stroke-width="1" />
-<g class="fade-line" style="animation-delay: 0.10s;">
+<g opacity="0">
   <text class="term-text" x="24" y="62"><tspan class="user-title">Prasadhol2001</tspan><tspan class="val">@</tspan><tspan class="host-title">github</tspan></text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.08s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.18s;">
+<g opacity="0">
   <line x1="24" y1="80" x2="466" y2="80" class="separator" />
+  <animate attributeName="opacity" from="0" to="1" begin="0.14s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.26s;">
+<g opacity="0">
   <text class="term-text" x="24" y="110">
     <tspan class="key">OS:</tspan>&#160;&#160;<tspan class="val">GitHub Mobile Engine x86_64</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.34s;">
+<g opacity="0">
   <text class="term-text" x="24" y="134">
     <tspan class="key">Host:</tspan>&#160;&#160;<tspan class="val">Flutter Engine v3.24 / Android / iOS</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.26s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.42s;">
+<g opacity="0">
   <text class="term-text" x="24" y="158">
     <tspan class="key">Role:</tspan>&#160;&#160;<tspan class="val">Flutter &amp; Mobile App Developer</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.32s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.50s;">
+<g opacity="0">
   <text class="term-text" x="24" y="182">
     <tspan class="key">Specialty:</tspan>&#160;&#160;<tspan class="val">Full-Cycle App Architecture &amp; APIs</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.38s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.58s;">
+<g opacity="0">
   <text class="term-text" x="24" y="206">
     <tspan class="key">State Mgmt:</tspan>&#160;&#160;<tspan class="val">GetX / Provider / Bloc</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.44s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.66s;">
+<g opacity="0">
   <text class="term-text" x="24" y="230">
     <tspan class="key">Backend:</tspan>&#160;&#160;<tspan class="val">Firebase (Auth, Firestore, Cloud)</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.50s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.74s;">
+<g opacity="0">
   <text class="term-text" x="24" y="254">
     <tspan class="key">Stack:</tspan>&#160;&#160;<tspan class="val">Flutter, Dart, Kotlin, Java, REST APIs</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.56s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.82s;">
+<g opacity="0">
   <text class="term-text" x="24" y="278">
     <tspan class="key">Tools:</tspan>&#160;&#160;<tspan class="val">Git, GitHub, CI/CD, VS Code, Android Studio</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.62s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.90s;">
+<g opacity="0">
   <text class="term-text" x="24" y="302">
     <tspan class="key">Status:</tspan>&#160;&#160;<tspan class="val">Building scalable, high-quality apps 🚀</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.68s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 0.98s;">
+<g opacity="0">
   <text class="term-text" x="24" y="326">
     <tspan class="key">Contact:</tspan>&#160;&#160;<tspan class="val">prasadhol922001@gmail.com</tspan>
   </text>
+  <animate attributeName="opacity" from="0" to="1" begin="0.74s" dur="0.3s" fill="freeze" />
 </g>
-<g class="fade-line" style="animation-delay: 1.06s;">
+<g opacity="0">
   <rect x="24" y="342" width="20" height="14" rx="3" fill="#484f58" />
   <rect x="48" y="342" width="20" height="14" rx="3" fill="#ff7b72" />
   <rect x="72" y="342" width="20" height="14" rx="3" fill="#7ee787" />
@@ -87,5 +96,6 @@
   <rect x="144" y="342" width="20" height="14" rx="3" fill="#d2a8ff" />
   <rect x="168" y="342" width="20" height="14" rx="3" fill="#a5d6ff" />
   <rect x="192" y="342" width="20" height="14" rx="3" fill="#f0f6fc" />
+  <animate attributeName="opacity" from="0" to="1" begin="0.80s" dur="0.3s" fill="freeze" />
 </g>
 </svg>
