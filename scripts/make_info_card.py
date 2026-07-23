@@ -1,5 +1,6 @@
 import os
 import sys
+import html
 
 def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     is_static = os.environ.get("STATIC") == "1"
@@ -38,14 +39,13 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     # Window Header
     lines.append('<circle class="header-dot" cx="20" cy="18" r="5" fill="#ff5f56" />')
     lines.append('<circle class="header-dot" cx="35" cy="18" r="5" fill="#ffbd2e" />')
-    svg_header_dot = '<circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />'
-    lines.append(svg_header_dot)
-    lines.append(f'<text class="title-text" x="{width // 2}" y="22" text-anchor="middle">neofetch --user {username}</text>')
+    lines.append('<circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />')
+    lines.append(f'<text class="title-text" x="{width // 2}" y="22" text-anchor="middle">neofetch --user {html.escape(username)}</text>')
     lines.append(f'<line x1="0" y1="32" x2="{width}" y2="32" stroke="#21262d" stroke-width="1" />')
     
     # Info Data Rows
     info_rows = [
-        ("HEADER", f'<tspan class="user-title">{username}</tspan><tspan class="val">@</tspan><tspan class="host-title">github</tspan>'),
+        ("HEADER", f'<tspan class="user-title">{html.escape(username)}</tspan><tspan class="val">@</tspan><tspan class="host-title">github</tspan>'),
         ("SEP", "------------------------------------------"),
         ("KEYVAL", "OS", "GitHub Mobile Engine x86_64"),
         ("KEYVAL", "Host", "Flutter Engine v3.24 / Android / iOS"),
@@ -79,7 +79,7 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
             lines.append(f'  <line x1="{start_x}" y1="{y_pos - 6}" x2="{width - start_x}" y2="{y_pos - 6}" class="separator" />')
             lines.append('</g>')
         elif row_type == "KEYVAL":
-            key, val = row[1], row[2]
+            key, val = html.escape(row[1]), html.escape(row[2])
             lines.append(f'<g{anim_attr}>')
             lines.append(f'  <text class="term-text" x="{start_x}" y="{y_pos}">')
             lines.append(f'    <tspan class="key">{key}:</tspan>&#160;&#160;<tspan class="val">{val}</tspan>')
@@ -100,8 +100,9 @@ def generate_info_card(output_svg="info-card.svg", username="Prasadhol2001"):
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
         
-    print(f"Generated Info Card SVG '{output_svg}'.")
+    print(f"Generated Info Card SVG '{output_svg}' for user '{username}'.")
 
 if __name__ == "__main__":
-    user = sys.argv[1] if len(sys.argv) > 1 else "Prasadhol2001"
-    generate_info_card("info-card.svg", user)
+    out_file = sys.argv[1] if len(sys.argv) > 1 else "info-card.svg"
+    user = sys.argv[2] if len(sys.argv) > 2 else "Prasadhol2001"
+    generate_info_card(out_file, user)
