@@ -24,13 +24,19 @@ jobs:
         run: pip install -r scripts/requirements.txt
         
       - name: Fetch live contribution data
-        run: python scripts/fetch_contributions.py Prasadhol2001
+        run: python scripts/fetch_contributions.py Prasadhol2001 data/contributions.json
         
       - name: Render contribution heatmap SVG
         run: python scripts/render_heatmap_svg.py data/contributions.json contrib-heatmap.svg
         
+      - name: Fetch live recent activity
+        run: python scripts/fetch_activity.py Prasadhol2001 data/activity.json
+        
+      - name: Render recent activity SVG
+        run: python scripts/render_activity_svg.py data/activity.json recent-activity.svg
+        
       - name: Commit updated art
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          commit_message: "chore: refresh contribution graph & activity [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg data/activity.json recent-activity.svg"

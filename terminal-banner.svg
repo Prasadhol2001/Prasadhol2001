@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 110" width="860" height="110">
+<defs>
+  <style>
+    .banner-bg { fill: #0d1117; rx: 8px; ry: 8px; stroke: #30363d; stroke-width: 1px; }
+    .header-dot { rx: 50%; ry: 50%; }
+    .prompt-user { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; fill: #58a6ff; font-weight: bold; }
+    .prompt-host { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; fill: #bc8cff; font-weight: bold; }
+    .cmd-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 14px; fill: #e6edf3; font-weight: 600; }
+    .subtitle-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 14px; fill: #7ee787; font-weight: bold; }
+    .cursor { fill: #58a6ff; }
+  </style>
+  <clipPath id="type-clip">
+    <rect x="0" y="0" width="0" height="110">
+      <animate attributeName="width" from="0" to="860" begin="0.2s" dur="2.8s" fill="freeze" />
+    </rect>
+  </clipPath>
+</defs>
+<rect class="banner-bg" width="860" height="110" />
+<circle class="header-dot" cx="20" cy="18" r="5" fill="#ff5f56" />
+<circle class="header-dot" cx="35" cy="18" r="5" fill="#ffbd2e" />
+<circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />
+<line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" stroke-width="1" />
+<text class="cmd-text" x="20" y="58">
+  <tspan class="prompt-user">Prasadhol2001</tspan><tspan fill="#8b949e">@</tspan><tspan class="prompt-host">github</tspan><tspan fill="#8b949e"> ~ $ </tspan>
+  <tspan fill="#d2a8ff">echo</tspan> <tspan fill="#a5d6ff">"Hi, I&#39;m Prasad Hol! 👋"</tspan>
+</text>
+<g clip-path="url(#type-clip)">
+  <text class="subtitle-text" x="20" y="90">> Flutter &amp; Mobile App Developer | Firebase &amp; API Specialist 🚀</text>
+</g>
+<rect class="cursor" x="600" y="76" width="10" height="16" rx="1">
+  <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+</rect>
+</svg>

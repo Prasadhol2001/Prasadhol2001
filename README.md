@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="./terminal-banner.svg" width="860" alt="Terminal Banner" />
+
+<br><br>
+
 <h3><code>Prasadhol2001@github ~ $ ./contributions.sh</code></h3>
 <img src="./contrib-heatmap.svg" width="860" alt="Live Contribution Graph" />
 
@@ -13,7 +17,23 @@
   </tr>
 </table>
 
+<br><br>
+
+<h3><code>Prasadhol2001@github ~ $ ./recent_activity.sh</code></h3>
+<img src="./recent-activity.svg" width="860" alt="Recent GitHub Activity" />
+
 </div>
+
+---
+
+# 📱 Featured Production Apps on Google Play
+
+| App | Description | Key Tech Stack | Play Store Link |
+| :--- | :--- | :--- | :---: |
+| **📱 Edrilla** | EdTech & E-Learning Platform | `Flutter` `Dart` `Firebase` `REST APIs` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.edrilla.app) |
+| **🚚 Lion Express** | Logistics & Real-Time Parcel Tracking | `Flutter` `Dart` `GetX` `REST APIs` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.lionexpress.nexp) |
+| **🛍️ Zyclo Fashion** | E-Commerce Fashion & Shopping Experience | `Flutter` `Dart` `Provider` `Firebase` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.zyclofashion.app) |
+| **⚡ Hemz** | On-Demand Services & Multi-Utility App | `Flutter` `Dart` `Bloc` `Cloud APIs` | [![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.hemz.nexp) |
 
 ---
 
