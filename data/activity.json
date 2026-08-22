@@ -1,20 +1,20 @@
 {
   "username": "Prasadhol2001",
-  "updated_at": "2026-08-21T07:06:50.575253+00:00",
+  "updated_at": "2026-08-22T06:58:29.600492+00:00",
   "events": [
     {
-      "type": "PushEvent",
-      "icon": "\ud83d\udd28",
-      "description": "Pushed 0 commits to Prasadhol2001/Prasadhol2001",
-      "repo": "Prasadhol2001/Prasadhol2001",
-      "date": "Jul 23, 2026"
+      "type": "MemberEvent",
+      "icon": "\ud83d\ude80",
+      "description": "Activity in CoderAnshul/corperateCubicles-Backend-",
+      "repo": "CoderAnshul/corperateCubicles-Backend-",
+      "date": "Aug 21, 2026"
     },
     {
-      "type": "PushEvent",
-      "icon": "\ud83d\udd28",
-      "description": "Pushed 0 commits to Prasadhol2001/Prasadhol2001",
-      "repo": "Prasadhol2001/Prasadhol2001",
-      "date": "Jul 23, 2026"
+      "type": "MemberEvent",
+      "icon": "\ud83d\ude80",
+      "description": "Activity in CoderAnshul/corperateCubicles-Admin",
+      "repo": "CoderAnshul/corperateCubicles-Admin",
+      "date": "Aug 21, 2026"
     },
     {
       "type": "PushEvent",
