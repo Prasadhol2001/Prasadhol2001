@@ -1,20 +1,21 @@
 {
   "username": "Prasadhol2001",
-  "updated_at": "2026-08-30T11:53:40.741662+00:00",
+  "updated_at": "2026-08-31T13:46:46.976997+00:00",
   "events": [
     {
-      "type": "MemberEvent",
-      "icon": "\ud83d\ude80",
-      "description": "Activity in CoderAnshul/corperateCubicles-Backend-",
-      "repo": "CoderAnshul/corperateCubicles-Backend-",
-      "date": "Aug 21, 2026"
+      "icon": "\ud83d\udd28",
+      "description": "Pushed updates to Prasadhol2001/Prasadhol2001",
+      "date": "Recent"
     },
     {
-      "type": "MemberEvent",
-      "icon": "\ud83d\ude80",
-      "description": "Activity in CoderAnshul/corperateCubicles-Admin",
-      "repo": "CoderAnshul/corperateCubicles-Admin",
-      "date": "Aug 21, 2026"
+      "icon": "\ud83d\udcf1",
+      "description": "Published mobile app updates on Google Play Store",
+      "date": "Recent"
+    },
+    {
+      "icon": "\u2728",
+      "description": "Maintained Flutter architecture & mobile app repositories",
+      "date": "Recent"
     }
   ]
 }
