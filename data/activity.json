@@ -1,13 +1,21 @@
 {
   "username": "Prasadhol2001",
-  "updated_at": "2026-10-29T12:58:12.227731+00:00",
+  "updated_at": "2026-10-30T12:52:39.441581+00:00",
   "events": [
     {
-      "type": "MemberEvent",
-      "icon": "\ud83d\ude80",
-      "description": "Activity in nexprism/Data-Knowledge",
-      "repo": "nexprism/Data-Knowledge",
-      "date": "Oct 22, 2026"
+      "icon": "\ud83d\udd28",
+      "description": "Pushed updates to Prasadhol2001/Prasadhol2001",
+      "date": "Recent"
+    },
+    {
+      "icon": "\ud83d\udcf1",
+      "description": "Published mobile app updates on Google Play Store",
+      "date": "Recent"
+    },
+    {
+      "icon": "\u2728",
+      "description": "Maintained Flutter architecture & mobile app repositories",
+      "date": "Recent"
     }
   ]
 }
