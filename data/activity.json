@@ -1,7 +1,14 @@
 {
   "username": "Prasadhol2001",
-  "updated_at": "2026-10-31T12:24:44.363715+00:00",
+  "updated_at": "2026-11-01T13:19:59.696011+00:00",
   "events": [
+    {
+      "type": "WatchEvent",
+      "icon": "\u2b50",
+      "description": "Starred capcom6/android-sms-gateway",
+      "repo": "capcom6/android-sms-gateway",
+      "date": "Oct 31, 2026"
+    },
     {
       "type": "MemberEvent",
       "icon": "\ud83d\ude80",
